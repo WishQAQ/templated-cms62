@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_basehost/}/style/css/gongy.css" type="text/css" rel="stylesheet" /> 
+<link href="{dede:global.cfg_basehost/}/style/css/news.css" type="text/css" rel="stylesheet" />
+<script src="{dede:global.cfg_basehost/}/style/js/jquery-1.8.3.min.js"></script>
+<script src="{dede:global.cfg_basehost/}/style/js/menu.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+{dede:include filename='head.htm'/}
+<!--内容-->
+<div class="main">
+{dede:include filename='left.htm'/}
+<div class="mainr">
+<div class="mainr-s">
+<div class="mainr-sl"><img src="{dede:global.cfg_basehost/}/style/images/CONTACT.png" />
+<p>联系我们<br /><span>CONTACT US</span></p>
+</div>
+<div class="mainr-sr">当前位置:{dede:field name='position'/}</a></div>
+
+</div>
+ 
+ <div class="mainr-di">
+ 
+  <div style="width:938px;height:428px;border:#ccc solid 1px; overflow:auto;" id="dituContent"></div>
+  <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="2" />
+<input type="hidden" name="do" value="2" />
+  <table>
+  <tr><td class="ge">留言标题：</td><td><input type="text"  name='lybt' class="txt" /></td></tr>
+   <tr><td class="ge">留言内容：</td><td><textarea cols="60" name='nr' rows="6" class="nei"></textarea></td></tr>
+    <tr><td class="ge">联系邮箱：</td><td><input type="text" name='youxiang' class="txt"/></td></tr>
+     <tr><td class="ge">联系电话：</td><td><input type="text" name='dhhm' class="txt" /></td></tr>
+      <tr><td class="ge">联系人：</td><td><input type="text" name='lxr' class="txt" /></td></tr>
+      <input type="hidden" name="dede_fields" value="lybt,text;nr,multitext;youxiang,text;dhhm,text;lxr,text" />
+<input type="hidden" name="dede_fieldshash" value="cb0d6af98261f1bb9d3b90841e39b73a" />
+       <tr><td></td><td><input  type="submit" name="submit" value="提交" /></td></tr>
+  <tr><td></td><td></td></tr>
+
+  <tr><td></td><td  class="kuan">客户服务热线</td></tr>
+  <tr><td></td><td  class="kuan dian">400-400-4000</td></tr>
+  <tr><td></td><td  class="kuan"></td></tr>
+  <tr><td></td><td  class="kuan">邮箱</td></tr>
+  <tr><td></td><td  class="kuan dian">www.xxxxxx.com</td></tr>
+  
+  
+  
+  
+  
+  
+  
+  </table>
+  
+  
+  
+  
+  </form>
+  
+  
+  
+  </div>
+</div>
+
+
+
+
+</div>
+{dede:include filename='footer.htm'/}
+<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/map.js"></script>
+</body>
+</html>

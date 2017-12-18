@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_webname/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link href="{dede:global.cfg_basehost/}/style/css/gongy.css" type="text/css" rel="stylesheet" /> 
+<link href="{dede:global.cfg_basehost/}/style/css/style.css" type="text/css" rel="stylesheet" />
+<script src="{dede:global.cfg_basehost/}/style/js/jquery-1.8.3.min.js"></script>
+<script src="{dede:global.cfg_basehost/}/style/js/menu.js"></script>
+</head>
+
+<body>
+
+{dede:include filename='head.htm'/}
+<!--内容01-->
+<div class="main">
+<div  id="banner">
+<ul>
+	<li>
+		<img src="{dede:global.cfg_basehost/}/style/images/bangshi.jpg"/>
+        <b></b>
+		<div class="tou">
+			<img src="{dede:global.cfg_basehost/}/style/images/kuang-bg.jpg" />
+        	<h2>办公室内部场景</h2>
+			<p>Beautiful Suzhou couplet English is to think that the people who improves oneself English 
+			<br />ability has provided the approach that this studies boundlessly<p>
+		</div>
+	</li>
+    <li>
+		<img src="{dede:global.cfg_basehost/}/style/images/bangshi1.jpg"/>
+         <b></b>
+		<div class="tou">
+			<img src="{dede:global.cfg_basehost/}/style/images/kuang-bg.jpg" />
+        	<h2>办公室内部场景</h2>
+			<p>Beautiful Suzhou couplet English is to think that the people who improves oneself English 
+			<br />ability has provided the approach that this studies boundlessly<p>
+		</div>
+    </li>
+    <li>
+		<img src="{dede:global.cfg_basehost/}/style/images/bangshi2.jpg"/>
+         <b></b>
+		<div class="tou">
+			<img src="{dede:global.cfg_basehost/}/style/images/kuang-bg.jpg" />
+        	<h2>办公室内部场景</h2>
+			<p>Beautiful Suzhou couplet English is to think that the people who improves oneself English 
+			<br />ability has provided the approach that this studies boundlessly<p>
+		</div>
+    </li>
+    <li>
+		<img src="{dede:global.cfg_basehost/}/style/images/bangshi3.jpg"/>
+         <b></b>
+		<div class="tou">
+			<img src="{dede:global.cfg_basehost/}/style/images/kuang-bg.jpg" />
+        	<h2>办公室内部场景</h2>
+			<p>Beautiful Suzhou couplet English is to think that the people who improves oneself English 
+			<br />ability has provided the approach that this studies boundlessly<p>
+		</div>
+    </li></ul>
+</div> 
+<div  id="main-c">
+
+	<a href="javascript:" class="bg">1</a>
+	<a href="javascript:">2</a>
+	<a href="javascript:">3</a>
+	<a href="javascript:">4</a>
+</div>
+<div class="main-r">
+<p>WHAT WE DO?</p>
+<img src="{dede:global.cfg_basehost/}/style/images/ABOUT.png" />
+<div class="gong">
+<a href="#">公司简介</a>
+</div>
+<img src="{dede:global.cfg_basehost/}/style/images/360.png" class="d360"  />
+<br /><span>全方位专业服务</span>
+
+</div>
+<div class="main-2r">
+<h4>公司服务</h4>
+<p>要采购库存儿童服装用品的企业其客户主要是东南以合情合理的方式为低处消费者提供适合的产品，购库存儿童服装用品的企业</p>
+<p class="p2">回收库存童装 收购库存童装，于高价 诚信 快速 现金交易为你服务—回收休闲童装 -牛仔童装-外贸童</p>
+<a href="/about/">企业文化</a>
+<a href="/about/">企业发展</a>
+<a href="/about/">荣誉资质</a>
+
+</div>
+
+</div>
+<!--内容02-->
+<div class="xinwen">
+<img  src="{dede:global.cfg_basehost/}/style/images/xinwenz.jpg"/>
+<a href="/news/">查看更多</a>
+</div>
+<div  class="d-bg">
+<div  class="main02">
+
+<div  class="main02-l">
+{dede:arclist limit='0,1' typeid=2 type='image.'  orderby='pubdate' }
+<a href="[field:arcurl /]"><img src="[field:picname/]" width="380" height="350"  /></a>
+<p>[field:description function='cn_substr(Html2text("@me"),200)'/]</p>
+{/dede:arclist}
+</div>
+
+
+
+
+
+<div class="main02-c">
+{dede:arclist limit='1,1' typeid=2 type='image.'  orderby='pubdate' }
+<a href="[field:arcurl /]"><img src="[field:picname/]" width="380" height="350" /></a>
+<p>[field:description function='cn_substr(Html2text("@me"),200)'/]</p>
+{/dede:arclist}
+</div>
+
+<div class="main02-r">
+{dede:arclist limit='2,1' typeid=2 type='image.'  orderby='pubdate' }
+<a href="[field:arcurl /]"><img src="[field:picname/]"  width="380" height="350" /></a>
+<p>[field:description function='cn_substr(Html2text("@me"),200)'/]</p>
+{/dede:arclist}
+</div>
+</div>
+</div>
+<!--内容03-->
+<div class="pa">
+
+<img src="{dede:global.cfg_basehost/}/style/images/PRODUCT.png" />
+<p>产品中心<br />
+<span>PRODUCT CENTER</span></p>
+
+</div>
+<div class="main03" >
+<ul>
+{dede:arclist row='4' typeid=3 type='image.'  orderby='pubdate' }
+<li> <a href="[field:arcurl /]"><img src="[field:picname/]"  width="292" height="237"  /></a><br /><a href="[field:arcurl /]"><span>[field:title /]</span></a></li>
+{/dede:arclist}
+</ul>
+
+
+</div>
+<!--底部-->
+<div class="dibu">
+<div class="b-g"><a href="#" class="toTop"></a>
+<div class="fo">
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+<table>
+<tr>
+	<td> <input type="text" value="姓名" name='xingming' id="mave"/></td><td><input type="text" name='dhhm' value="电话号码"  class="b-gy"/></td>
+    </tr>
+
+<tr><td colspan="2"><textarea cols="50" rows="5" name='nr' class="wenben"></textarea></td></tr>
+<input type="hidden" name="dede_fields" value="xingming,text;dhhm,text;nr,multitext" />
+<input type="hidden" name="dede_fieldshash" value="a95c182131eeb021412b006a4c308772" />
+<tr><td colspan="2" class="ju"><input type="submit" name="submit" value="我要提交" class="ti" /></td>
+
+</tr>
+
+
+</table>
+</form>
+<p>内容：</p>
+</div>
+
+
+
+
+</div>
+</div>
+{dede:include filename='footer.htm'/}
+
+</body>
+</html>
